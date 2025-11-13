@@ -1,7 +1,5 @@
 ---
 layout: default
-title: Home
-toc: true
 ---
 
 # Code Highlight with Jekyll and Rouge
