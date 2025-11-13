@@ -55,8 +55,8 @@ You custom GitHub actions to inplement custom Rouge rules.
 > [!CAUTION]
 > `Gemfile` refers to the theme. Edit it if you use a theme other than `jekyll-theme-minimal`  
 
-9. Add [`css/code.css`](https://github.com/miyako/pages/blob/main/css/code.css)
-10. Add [`css/copy.css`](https://github.com/miyako/pages/blob/main/css/copy.css)
+9. Add [`assets/css/code.css`](https://github.com/miyako/pages/blob/main/assets/css/code.css)
+10. Add [`assets/css/copy.css`](https://github.com/miyako/pages/blob/main/assets/css/copy.css)
 11. Add 2 lines to `head-custom.html`
 
 ```html
