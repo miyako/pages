@@ -50,13 +50,14 @@ You custom GitHub actions to inplement custom Rouge rules.
     
 6. Add [`_config.yml`](https://github.com/miyako/pages/blob/main/_config.yml)
 7. Add [`_plugins/rouge_4d.rb`](https://github.com/miyako/pages/blob/main/_plugins/rouge_4d.rb)
+8. Add [`Gemfile`](https://github.com/miyako/pages/blob/main/Gemfile)
 
 > [!NOTE]
 > The above enable Rouge plugins and adds the 4D language definition.  
 
-8. Add [`css/code.css`](https://github.com/miyako/pages/blob/main/css/code.css)
-8. Add [`css/copy.css`](https://github.com/miyako/pages/blob/main/css/copy.css)
-10. Add 2 lines to `head-custom.html`
+9. Add [`css/code.css`](https://github.com/miyako/pages/blob/main/css/code.css)
+10. Add [`css/copy.css`](https://github.com/miyako/pages/blob/main/css/copy.css)
+11. Add 2 lines to `head-custom.html`
 
 ```html
 <link rel="stylesheet" href="{{ '/assets/css/code.css' | relative_url }}">
@@ -67,8 +68,8 @@ You custom GitHub actions to inplement custom Rouge rules.
 > `head-custom.html` is included in the HTML because `_layouts/default.html` contains the line 
 > `{% include head-custom.html %}`
 
-11. Add `{% include footer.html %}` right before the closing `</body>` tag in [_layouts/default.html](https://github.com/miyako/pages/blob/main/_layouts/default.html)
-12. Add [`footer.html`](https://github.com/miyako/pages/blob/main/_includes/footer.html)
+12. Add `{% include footer.html %}` right before the closing `</body>` tag in [_layouts/default.html](https://github.com/miyako/pages/blob/main/_layouts/default.html)
+13. Add [`footer.html`](https://github.com/miyako/pages/blob/main/_includes/footer.html)
 
 > [!NOTE]
 > The above adds a "copy code" button to each `<pre>` element.
