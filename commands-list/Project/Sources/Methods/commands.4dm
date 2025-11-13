@@ -17,4 +17,7 @@ End for
 
 $commands:=$commands.orderByMethod(Formula:C1597(methods_list))
 
-SET TEXT TO PASTEBOARD:C523(JSON Stringify:C1217($commands))
+$uppercase:=$commands.filter(Formula:C1597(Match regex:C1019("^[\\p{Lu} 0-9]+$"; $1.value; 1)))
+$lowercase:=$commands.filter(Formula:C1597(Match regex:C1019("\\p{Ll}"; $1.value; 1)))
+
+SET TEXT TO PASTEBOARD:C523(JSON Stringify:C1217($lowercase))
