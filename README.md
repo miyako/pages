@@ -52,8 +52,8 @@ You custom GitHub actions to inplement custom Rouge rules.
 7. Add [`_plugins/rouge_4d.rb`](https://github.com/miyako/pages/blob/main/_plugins/rouge_4d.rb)
 8. Add [`Gemfile`](https://github.com/miyako/pages/blob/main/Gemfile)
 
-> [!NOTE]
-> The above enable Rouge plugins and adds the 4D language definition.  
+> [!CAUTION]
+> `Gemfile` refers to the theme. Edit it if you use a theme other than `jekyll-theme-minimal`  
 
 9. Add [`css/code.css`](https://github.com/miyako/pages/blob/main/css/code.css)
 10. Add [`css/copy.css`](https://github.com/miyako/pages/blob/main/css/copy.css)
