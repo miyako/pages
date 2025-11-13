@@ -26,6 +26,7 @@ As an alternative to Rouge, one can do the following:
 1. Disable Rouge in `_config.yml`
 2. Install and use [highlightjs-4d](https://github.com/highlightjs/highlightjs-4d) instead
 
+c.f. https://miyako.github.io/4d-tips-github-pages/
 
 ---
 
