@@ -5,19 +5,19 @@ How to generate pages with rouge support
 
 **GitHub Pages** is a free web hosting service provided by GitHub that allows you to publish websites directly from a GitHub repository. It is widely used for personal websites, project documentation, blogs, etc.
 
-The websites is generated with **[Jekyll](https://jekyllrb.com)**. The pages are converted from markdown with **[Kramdown](https://kramdown.gettalong.org)**. The `<pre>` elements are generated from fenced code blocks with **[Rouge](https://rouge.jneen.net)**.
+The website is built with **[Jekyll](https://jekyllrb.com)**. The static HTML pages are converted from markdown files with **[Kramdown](https://kramdown.gettalong.org)**. The `<pre>` elements are generated from fenced code blocks in the markdown with **[Rouge](https://rouge.jneen.net)**.
 
 The built-in solution is stable, elegant and easy maintain.
 
 ## Problem
 
-If you have fenced code like
+If you have fenced code blocks in the markdown like
 
 > \`\`\`4d  
 > ALERT("Hello!")  
 > \`\`\`  
 
-the block is converted to a `<pre>` element but **no syntax highlighting is applied** because [the 4D programming language is not recognised by Rouge](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers).
+their contents are converted to `<pre>` elements in the generated HTML but **no syntax highlighting is applied** because [the 4D programming language is not recognised by Rouge](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers).
 
 As an alternative solution, one can do the following:
 
