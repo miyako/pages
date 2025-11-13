@@ -28,8 +28,6 @@ As an alternative to Rouge, one can do the following:
 
 c.f. https://miyako.github.io/4d-tips-github-pages/
 
----
-
 ## Alternative Solution - server side syntax highlight
 
 You custom GitHub actions to inplement custom Rouge rules.
@@ -40,10 +38,13 @@ You custom GitHub actions to inplement custom Rouge rules.
 4. Click "Configure"
 5. Edit [`jekyll-gh-pages.yml`](https://github.com/miyako/pages/blob/main/.github/workflows/jekyll-gh-pages.yml)
 
+> [!NOTE]
+> To add custom language in Rouge you must execute Jekyll with plugins. GitHub Pages uses standard [Kramdown and Jekyll](https://github.com/github/pages-gem) which does not include the 4D programming language. The build runs in safe mode which only allows white-listed plugins. The above action enables custom plugins by not running in safe mode.
 
+6. TBC   
   
 
-
+---
 
 1. Find a Rouge Theme in [gallery](https://spsarolkar.github.io/rouge-theme-preview/)
 2. Generate `.css`
