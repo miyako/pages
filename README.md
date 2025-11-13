@@ -41,11 +41,22 @@ You custom GitHub actions to inplement custom Rouge rules.
 > [!NOTE]
 > To add custom language in Rouge you must execute Jekyll with plugins. GitHub Pages uses standard [Kramdown and Jekyll](https://github.com/github/pages-gem) which does not include the 4D programming language. The build runs in safe mode which only allows white-listed plugins. The above action enables custom plugins by not running in safe mode.
 
+6. Download Jekyll them for GitHub Pages e.g. [pages-themes/minimal](https://github.com/pages-themes/minimal)
+7. Copy the following assset to repository
+   * `_includes/`
+   * `_layouts/`
+   * `_sass/`
+   * `assets/`
+    
 6. Add [`_config.yml`](https://github.com/miyako/pages/blob/main/_config.yml)
 7. Add [`_plugins/rouge_4d.rb`](https://github.com/miyako/pages/blob/main/_plugins/rouge_4d.rb)
 
 > [!NOTE]
-> The above files enable Rouge plugins and adds the 4D language definition.   
+> The above files enable Rouge plugins and adds the 4D language definition.  
+
+8. Add custom Rouge style like [`css/thankful_eyes.css`](https://github.com/miyako/pages/blob/main/css/thankful_eyes.css)
+9. Add "copy code" button style in [`css/copy.css`](https://github.com/miyako/pages/blob/main/css/copy.css)  
+
 
 ---
 
