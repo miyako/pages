@@ -3,7 +3,9 @@ layout: default
 title: Home
 ---
 
-## Code Highlight with Jekyll and Rouge
+# Code Highlight with Jekyll and Rouge
+
+## Example FR
 
 ```4d
 var $commands : Collection
