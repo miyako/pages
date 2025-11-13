@@ -19,12 +19,13 @@ If you have fenced code blocks in the markdown like
 
 their contents are converted to `<pre>` elements in the generated HTML but **no syntax highlighting is applied** because [the 4D programming language is not recognised by Rouge](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers).
 
-As an alternative solution, one can do the following:
+## Solution - client side syntax highlight
 
-1. Disable Kramdown syntax highlighting
+As an alternative to Rouge, one can do the following:
+
+1. Disable Rouge in `_config.yml`
 2. Install and use [highlightjs-4d](https://github.com/highlightjs/highlightjs-4d) instead
 
-This will defer highlighting to the client side.
 
 ---
 
