@@ -52,7 +52,7 @@ You custom GitHub actions to inplement custom Rouge rules.
 7. Add [`_plugins/rouge_4d.rb`](https://github.com/miyako/pages/blob/main/_plugins/rouge_4d.rb)
 
 > [!NOTE]
-> The above files enable Rouge plugins and adds the 4D language definition.  
+> The above enable Rouge plugins and adds the 4D language definition.  
 
 8. Add [`css/code.css`](https://github.com/miyako/pages/blob/main/css/code.css)
 8. Add [`css/copy.css`](https://github.com/miyako/pages/blob/main/css/copy.css)
@@ -67,17 +67,8 @@ You custom GitHub actions to inplement custom Rouge rules.
 > `head-custom.html` is included in the HTML because `_layouts/default.html` contains the line 
 > `{% include head-custom.html %}`
 
----
+11. Add `{% include footer.html %}` right before the closing `</body>` tag in [_layouts/default.html](https://github.com/miyako/pages/blob/main/_layouts/default.html)
+12. Add [`footer.html`](https://github.com/miyako/pages/blob/main/_includes/footer.html)
 
-1. Find a Rouge Theme in [gallery](https://spsarolkar.github.io/rouge-theme-preview/)
-2. Generate `.css`
-
-```sh
-rougify style thankful_eyes > assets/css/thankful_eyes.css
-```
-
-3. Reference the stylesheet
-
-```html
-<link rel="stylesheet" href="{{ '/assets/css/thankful_eyes.css' | relative_url }}">
-```
+> [!NOTE]
+> The above adds a "copy code" button to each `<pre>` element.  
