@@ -37,35 +37,33 @@ You custom GitHub actions to inplement custom Rouge rules.
 3. Select GitHub Pages Jekyll By GitHub Actions
 4. Click "Configure"
 5. Edit [`jekyll-gh-pages.yml`](https://github.com/miyako/pages/blob/main/.github/workflows/jekyll-gh-pages.yml)
-
 > [!NOTE]
 > To add custom language in Rouge you must execute Jekyll with plugins. GitHub Pages uses standard [Kramdown and Jekyll](https://github.com/github/pages-gem) which does not include the 4D programming language. The build runs in safe mode which only allows white-listed plugins. The above action enables custom plugins by not running in safe mode.
-
 6. Download Jekyll them for GitHub Pages e.g. [pages-themes/minimal](https://github.com/pages-themes/minimal)
 7. Copy the following assset to repository
    * `_includes/`
    * `_layouts/`
    * `_sass/`
    * `assets/`
-    
 6. Add [`_config.yml`](https://github.com/miyako/pages/blob/main/_config.yml)
 7. Add [`_plugins/rouge_4d.rb`](https://github.com/miyako/pages/blob/main/_plugins/rouge_4d.rb)
 8. Add [`Gemfile`](https://github.com/miyako/pages/blob/main/Gemfile)
-
 > [!CAUTION]
 > `Gemfile` refers to the theme. Edit it if you use a theme other than `jekyll-theme-minimal`  
-
 9. Add [`assets/css/code.css`](https://github.com/miyako/pages/blob/main/assets/css/code.css)
 10. Add [`assets/css/copy.css`](https://github.com/miyako/pages/blob/main/assets/css/copy.css)
 11. Add [`_includes/head-custom.html`](https://github.com/miyako/pages/blob/main/_includes/head-custom.html)
- 
 > [!NOTE]
 > `head-custom.html` is included in the HTML because `_layouts/default.html` contains the line 
 > `{% include head-custom.html %}`
-
-12. Add `{% include footer.html %}` right before the closing `</body>` tag in [`_layouts/default.html`](https://github.com/miyako/pages/blob/main/_layouts/default.html)
-13. Add [`_includes
+12. Remove any code in imported theme that conflicts with the addes stylesheets.
+e.g. 
+```scss
+// _sass/jekyll-theme-minimal.scss
+// @import "rouge-github";
+```
+13. Add `{% include footer.html %}` right before the closing `</body>` tag in [`_layouts/default.html`](https://github.com/miyako/pages/blob/main/_layouts/default.html)
+14. Add [`_includes
 /footer.html`](https://github.com/miyako/pages/blob/main/_includes/footer.html)
-
 > [!NOTE]
 > The above adds a "copy code" button to each `<pre>` element.
