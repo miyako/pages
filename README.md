@@ -63,6 +63,15 @@ You custom GitHub actions to inplement custom Rouge rules.
 > `head-custom.html` is included in the HTML because `_layouts/default.html` contains the line 
 > `{% include head-custom.html %}`
 
+12. Remove any code in imported theme that conflicts with the addes stylesheets.
+
+e.g. 
+
+```scss
+// _sass/jekyll-theme-minimal.scss
+// @import "rouge-github";
+```
+
 12. Add `{% include footer.html %}` right before the closing `</body>` tag in [`_layouts/default.html`](https://github.com/miyako/pages/blob/main/_layouts/default.html)
 13. Add [`_includes
 /footer.html`](https://github.com/miyako/pages/blob/main/_includes/footer.html)
