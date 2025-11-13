@@ -21,8 +21,8 @@ the block is converted to a `<pre>` element but **no syntax highlighting is appl
 
 As an alternative solution, one can do the following:
 
-1. Disable Kramdown
-2. Enable [highlightjs-4d](https://github.com/highlightjs/highlightjs-4d) in HTML
+1. Disable Kramdown syntax highlighting
+2. Install and use [highlightjs-4d](https://github.com/highlightjs/highlightjs-4d) instead
 
 This will defer highlighting to the client side.
 
