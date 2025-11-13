@@ -57,12 +57,7 @@ You custom GitHub actions to inplement custom Rouge rules.
 
 9. Add [`assets/css/code.css`](https://github.com/miyako/pages/blob/main/assets/css/code.css)
 10. Add [`assets/css/copy.css`](https://github.com/miyako/pages/blob/main/assets/css/copy.css)
-11. Add 2 lines to `head-custom.html`
-
-```html
-<link rel="stylesheet" href="{{ site.github.repository_url }}/assets/css/code.css">
-<link rel="stylesheet" href="{{ site.github.repository_url }}/assets/css/copy.css">
-```
+11. Add [`_includes/head-custom.html`](https://github.com/miyako/pages/blob/main/_includes/head-custom.html)
  
 > [!NOTE]
 > `head-custom.html` is included in the HTML because `_layouts/default.html` contains the line 
