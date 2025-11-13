@@ -58,9 +58,16 @@ You custom GitHub actions to inplement custom Rouge rules.
 > `{% include head-custom.html %}`
 12. Remove any code in imported theme that conflicts with the addes stylesheets.
 e.g. 
-```scss
+```css
 // _sass/jekyll-theme-minimal.scss
 // @import "rouge-github";
+```
+```css
+///_sass/jekyll-theme-minimal.scss
+code, pre {
+  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+  /*color:#333;*/
+}
 ```
 13. Add `{% include footer.html %}` right before the closing `</body>` tag in [`_layouts/default.html`](https://github.com/miyako/pages/blob/main/_layouts/default.html)
 14. Add [`_includes
