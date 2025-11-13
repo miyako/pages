@@ -7,9 +7,17 @@ How to generate pages with rouge support
 
 The websites is generated with **[Jekyll](https://jekyllrb.com)**. The pages are converted from markdown with **[Kramdown](https://kramdown.gettalong.org)**. The `<pre>` elements are generated from fenced code blocks with **[Rouge](https://rouge.jneen.net)**.
 
-## Code Highlight
+The built-in solution is stable, elegant and easy maintain.
 
-The 4D programming language is not recognised by Rouge, meaning the `<pre>` element will default to plain text with no syntax highlighter. 
+## Problem
+
+If you have fenced code like
+
+> \`\`\`4d  
+> ALERT("Hello!")  
+> \`\`\`  
+
+the block is converted to a `<pre>` element but **no syntax highlighting is applied** because [the 4D programming language is not recognised by Rouge](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers).
 
 As an alternative solution, one can do the following:
 
@@ -17,6 +25,8 @@ As an alternative solution, one can do the following:
 2. Enable [highlightjs-4d](https://github.com/highlightjs/highlightjs-4d) in HTML
 
 This will defer highlighting to the client side.
+
+---
 
 ## Setup GitHub Pages
 
