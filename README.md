@@ -54,8 +54,16 @@ You custom GitHub actions to inplement custom Rouge rules.
 > [!NOTE]
 > The above files enable Rouge plugins and adds the 4D language definition.  
 
-8. Add custom Rouge style like [`css/thankful_eyes.css`](https://github.com/miyako/pages/blob/main/css/thankful_eyes.css)
-9. Add "copy code" button style in [`css/copy.css`](https://github.com/miyako/pages/blob/main/css/copy.css)  
+8. Add [`css/code.css`](https://github.com/miyako/pages/blob/main/css/code.css)
+8. Add [`css/copy.css`](https://github.com/miyako/pages/blob/main/css/copy.css)
+10. Add 2 lines to `head-custom.html`
+
+```html
+<link rel="stylesheet" href="{{ '/assets/css/code.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/copy.css' | relative_url }}">
+```
+ 
+
 
 
 ---
