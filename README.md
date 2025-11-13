@@ -30,11 +30,20 @@ c.f. https://miyako.github.io/4d-tips-github-pages/
 
 ---
 
-## Setup GitHub Pages
+## Alternative Solution - server side syntax highlight
 
-Go to Settings > Pages and activate GitHub Pages.
+You custom GitHub actions to inplement custom Rouge rules.
 
-## Rouge
+1. Go to Settings > Pages > Build and deployment
+2. Change Source from "Deply from a branch" to "GitHub Actions"
+3. Select GitHub Pages Jekyll By GitHub Actions
+4. Click "Configure"
+5. Edit [`jekyll-gh-pages.yml`](https://github.com/miyako/pages/blob/main/.github/workflows/jekyll-gh-pages.yml)
+
+
+  
+
+
 
 1. Find a Rouge Theme in [gallery](https://spsarolkar.github.io/rouge-theme-preview/)
 2. Generate `.css`
