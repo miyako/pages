@@ -5,4 +5,7 @@ kramdown:
   syntax_highlighter: rouge
 highlighter: rouge
 plugins_dir: _plugins
-baseurl: /pages
+exclude:
+  - LICENSE
+  - README.md
+  - resources/

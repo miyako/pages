@@ -1,0 +1,29 @@
+{
+	"Sources/Methods/methods_list.4dm": {
+		"startSelection": 35,
+		"endSelection": 35,
+		"firstSelectedLine": 5,
+		"lastSelectedLine": 5,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2025-11-13T07:59:26.719Z"
+	},
+	"Sources/Methods/commands.4dm": {
+		"startSelection": 0,
+		"endSelection": 54,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 21,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": ""
+	},
+	"Sources/Methods/functions.4dm": {
+		"startSelection": 48,
+		"endSelection": 48,
+		"firstSelectedLine": 23,
+		"lastSelectedLine": 23,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": ""
+	}
+}
