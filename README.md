@@ -96,3 +96,5 @@ $uppercase:=$commands.filter(Formule(Trouver regex("^[\\p{Lu} 0-9]+$"; $1.value;
 $lowercase:=$commands.filter(Formule(Trouver regex("\\p{Ll}"; $1.value; 1)))
 FIXER TEXTE DANS CONTENEUR(JSON Stringify($lowercase))
 ```
+
+TEST
