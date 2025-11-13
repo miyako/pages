@@ -60,8 +60,8 @@ You custom GitHub actions to inplement custom Rouge rules.
 11. Add 2 lines to `head-custom.html`
 
 ```html
-<link rel="stylesheet" href="{{ '/assets/css/code.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/copy.css' | relative_url }}">
+<link rel="stylesheet" href="{{ site.github.repository_url }}/assets/css/code.css">
+<link rel="stylesheet" href="{{ site.github.repository_url }}/assets/css/copy.css">
 ```
  
 > [!NOTE]
