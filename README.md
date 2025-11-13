@@ -63,8 +63,9 @@ You custom GitHub actions to inplement custom Rouge rules.
 <link rel="stylesheet" href="{{ '/assets/css/copy.css' | relative_url }}">
 ```
  
-
-
+> [!NOTE]
+> `head-custom.html` is included in the HTML because `_layouts/default.html` contains the line 
+> `{% include head-custom.html %}`
 
 ---
 
