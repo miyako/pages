@@ -71,4 +71,28 @@ You custom GitHub actions to inplement custom Rouge rules.
 12. Add [`footer.html`](https://github.com/miyako/pages/blob/main/_includes/footer.html)
 
 > [!NOTE]
-> The above adds a "copy code" button to each `<pre>` element.  
+> The above adds a "copy code" button to each `<pre>` element.
+
+## Result
+
+```4d
+var $commands : Collection
+$commands:=[]
+
+Boucle ($i; 1; 2000)
+	$name:=Nom commande($i)
+	Au cas ou 
+		: ($name="")
+			continue
+		: ($name="_@")
+			continue
+		Sinon 
+			$commands.push($name)
+	Fin de cas 
+Fin de boucle 
+
+$commands:=$commands.orderByMethod(Formule(methods_list))
+$uppercase:=$commands.filter(Formule(Trouver regex("^[\\p{Lu} 0-9]+$"; $1.value; 1)))
+$lowercase:=$commands.filter(Formule(Trouver regex("\\p{Ll}"; $1.value; 1)))
+FIXER TEXTE DANS CONTENEUR(JSON Stringify($lowercase))
+```
