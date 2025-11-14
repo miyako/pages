@@ -16,7 +16,3 @@ github:
   owner_url: "https://github.com/miyako"
   repository_url: "https://github.com/miyako/pages"
   is_project_page: false
-
-exclude:
-  - "resources"
-  
