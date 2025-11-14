@@ -20,3 +20,6 @@ github:
 exclude:
   - "vendor"
   - "resources"
+  - "LICENSE"
+  - "README.md"
+  - "Gemfile"
